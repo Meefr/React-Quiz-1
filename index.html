@@ -826,12 +826,15 @@
 
         if (window.scrollY > 76) {
           navEl.classList.add("bg-light");
+          navEl.classList.add("shadow-lg");
           navLinks.forEach((link) => {
             link.classList.remove("white-color");
             link.classList.add("heading-color");
           });
         } else {
           navEl.classList.remove("bg-light");
+          navEl.classList.remove("shadow-lg");
+
           navLinks.forEach((link) => {
             link.classList.add("white-color");
             link.classList.remove("heading-color");
